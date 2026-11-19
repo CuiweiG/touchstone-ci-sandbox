@@ -23,6 +23,6 @@ jobs:
       ${{ github.event.workflow_run.event == 'pull_request' &&
       github.event.workflow_run.conclusion != 'skipped' }}
     steps:
-      - uses: CuiweiG/touchstone-ci-sandbox/actions/comment@main
+      - uses: CuiweiG/touchstone/actions/comment@1719725e8dedab533c1de1287f40a01452492015
         with: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
