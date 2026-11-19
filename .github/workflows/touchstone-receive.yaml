@@ -16,8 +16,6 @@ jobs:
     if:
       true &&
       (
-        github.event.pull_request.author_association == 'OWNER' ||
-        github.event.pull_request.author_association == 'MEMBER' ||
         github.event.pull_request.author_association == 'COLLABORATOR' 
       )
     outputs:
