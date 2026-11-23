@@ -1,3 +1,3 @@
 sum_seq <- function(n) {
-  sum(as.numeric(seq_len(n)))
+  sum(seq_len(n))
 }
